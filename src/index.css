@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.swiper-pagination-bullet {
+    background-color: #000;
+    /* Color de los puntos inactivos */
+    width: 11px !important;
+    height: 11px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+    /* Color del punto activo */
+    width: 11px !important;
+    height: 11px !important;
+}
+
+.dobleuve{
+    letter-spacing: 20px;
+}
+
+.artesania{
+    letter-spacing: 3px;
+}

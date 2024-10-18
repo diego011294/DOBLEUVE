@@ -46,9 +46,9 @@ export const Navbar = () => {
     }, [user]); 
 
     return (
-        <div className="sticky top-0 z-50">
+        <div className="sticky top-0 z-50 bg-[#ffffff] w-full shadow-md">
             {/* Main Navbar */}
-            <div className="flex items-center justify-between bg-[#ffffff] h-auto p-4 shadow-md">
+            <div className="flex items-center justify-between  w-full h-auto p-4  max-w-7xl mx-auto">
                 <NavLink to="/">
                     <img src="/img/logo.svg" alt="Logo" className="pl-10" />
                 </NavLink>
@@ -79,7 +79,14 @@ export const Navbar = () => {
                         SOBRE NOSOTROS
                         {activeLink === '/aboutus' && <span className="block h-1 bg-[#A989AE] absolute -bottom-1 left-0 right-0" />}
                     </a>
-                    <NavLink to="#" className="hover:text-[#A989AE]">CONTACTO</NavLink>
+                    <a
+                        href="/contact"
+                        onClick={() => setActiveLink('/contact')}
+                        className={`relative ${activeLink === '/contact' ? 'text-[#A989AE]' : 'text-[#333333]'} hover:text-[#A989AE]`}
+                    >
+                        CONTACTO
+                        {activeLink === '/contact' && <span className="block h-1 bg-[#A989AE] absolute -bottom-1 left-0 right-0" />}
+                    </a>
                 </div>
 
                 {/* Navbar Icon cart, login */}

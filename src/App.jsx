@@ -13,6 +13,7 @@ import { RegisterPage } from "./pages/RegisterPage";
 import UserPanel from "./pages/UserPanel";
 import { AboutUs } from "./pages/AboutUs";
 import { AdminPanel } from "./pages/AdminPanel";
+import { ContactForm } from "./pages/ContactForm";
 
 export const App = () => {
   const location = useLocation();
@@ -36,6 +37,7 @@ export const App = () => {
         <Route path="/userpanel" element={<UserPanel />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/adminpanel" element={<AdminPanel />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
       
       {/* El Footer siempre se mostrará */}

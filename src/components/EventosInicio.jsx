@@ -67,7 +67,7 @@ export const EventosInicio = () => {
 
                 {/* Contenedor del Texto */}
                 <div className="flex flex-col gap-5 md:gap-16 transform md:-translate-x-[29px] pt-10 md:pt-0"> {/* max-w-lg para ajustar el ancho del texto */}
-                    <div className='flex items-start gap-4 mb-4 p-3 md:p-0 md:mt-10 w-[500px]'>
+                    <div className='flex items-start gap-4 mb-4 p-3 md:p-0 md:mt-10 md:w-[500px]'>
                         <img src="/img/iconCalen.svg" alt="Calendario icono" className="w-20 h-20" /> {/* Tamaño ajustado */}
                         <div className='flex flex-col gap-3 p-3'>
                             <h2 className="text-xl font-semibold text-[#A989AE]">
@@ -79,7 +79,7 @@ export const EventosInicio = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-start gap-4 p-3 md:p-0 w-[500px]'>
+                    <div className='flex items-start gap-4 p-3 md:p-0 md:w-[500px]'>
                         <img src="/img/iconCalen.svg" alt="Calendario icono" className="w-20 h-20" /> {/* Tamaño ajustado */}
                         <div className='flex flex-col p-3 gap-3'>
                             <h2 className="text-xl font-semibold text-[#A989AE]">
